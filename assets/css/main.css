@@ -170,6 +170,56 @@ h6 {
   text-transform: uppercase;
 }
 
+/* ===== CSS LOGO ===== */
+.header .logo-icon {
+  width: 52px;
+  height: 58px;
+  background-color: #0d1b3e;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.header .logo-icon span {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.header .logo-text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+.header .logo-name {
+  font-family: 'Arial Black', 'Franklin Gothic Medium', Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--heading-color); /* white in dark header */
+  letter-spacing: 2px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.header .logo-tagline {
+  font-family: Arial, sans-serif;
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--heading-color);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0.9;
+}
+
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
@@ -1709,116 +1759,147 @@ section,
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
+/* ===== PRICING SECTION — NEW COLORFUL DESIGN ===== */
+
 .pricing .pricing-item {
   background-color: var(--surface-color);
-  box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
-  border-top: 4px solid var(--background-color);
-  padding: 60px 40px;
+  border-radius: 20px;
+  overflow: hidden;
   height: 100%;
-  border-radius: 5px;
+  padding: 0;
+  border: 1.5px solid transparent;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  position: relative;
+}
+
+.pricing .pricing-item:hover {
+  transform: translateY(-8px);
+}
+
+/* কার্ডের উপরে রঙিন স্ট্রিপ */
+.pricing .pricing-item::before {
+  content: '';
+  display: block;
+  height: 7px;
+  width: 100%;
+}
+
+/* প্রতিটা কার্ডের আলাদা রঙ */
+.pricing .col-lg-6:nth-child(1) .pricing-item::before {
+  background: linear-gradient(90deg, #378ADD, #1DE3E3);
+}
+.pricing .col-lg-6:nth-child(2) .pricing-item::before {
+  background: linear-gradient(90deg, #7F77DD, #D4537E);
+}
+.pricing .col-lg-6:nth-child(3) .pricing-item::before {
+  background: linear-gradient(90deg, #1D9E75, #639922);
+}
+.pricing .col-lg-6:nth-child(4) .pricing-item::before {
+  background: linear-gradient(90deg, #D85A30, #EF9F27);
+}
+
+/* কার্ড body padding */
+.pricing .pricing-item > *:not(:first-child),
+.pricing .pricing-item h3,
+.pricing .pricing-item ul,
+.pricing .pricing-item .buy-btn {
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 .pricing h3 {
-  font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 20px;
-}
-
-.pricing h4 {
-  color: var(--accent-color);
-  font-size: 48px;
-  font-weight: 400;
-  font-family: var(--heading-font);
-  margin-bottom: 0;
-}
-
-.pricing h4 sup {
-  font-size: 28px;
-}
-
-.pricing h4 span {
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 24px 28px 6px;
+  padding: 0 !important;
+  color: var(--heading-color);
 }
 
 .pricing ul {
-  padding: 20px 0;
+  padding: 12px 28px !important;
   list-style: none;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  text-align: left;
-  line-height: 20px;
+  line-height: 1.5;
+  margin-bottom: 0;
 }
 
 .pricing ul li {
-  padding: 10px 0;
+  padding: 8px 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.875rem;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  border-bottom: 0.5px solid color-mix(in srgb, var(--default-color), transparent 88%);
+}
+
+.pricing ul li:last-child {
+  border-bottom: none;
 }
 
 .pricing ul i {
-  color: #059652;
-  font-size: 24px;
-  padding-right: 3px;
+  font-size: 18px;
+  padding-right: 0;
+  margin-top: 2px;
+  flex-shrink: 0;
 }
 
-.pricing ul .na {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-}
+/* card 1 — blue */
+.pricing .col-lg-6:nth-child(1) ul i { color: #378ADD; }
+.pricing .col-lg-6:nth-child(1) .pricing-item:hover { border-color: #85B7EB; }
 
-.pricing ul .na i {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-}
+/* card 2 — purple (featured) */
+.pricing .col-lg-6:nth-child(2) ul i { color: #7F77DD; }
+.pricing .col-lg-6:nth-child(2) .pricing-item { border-color: #AFA9EC; }
+.pricing .col-lg-6:nth-child(2) .pricing-item:hover { border-color: #7F77DD; }
 
-.pricing ul .na span {
-  text-decoration: line-through;
-}
+/* card 3 — teal */
+.pricing .col-lg-6:nth-child(3) ul i { color: #1D9E75; }
+.pricing .col-lg-6:nth-child(3) .pricing-item:hover { border-color: #5DCAA5; }
 
+/* card 4 — coral */
+.pricing .col-lg-6:nth-child(4) ul i { color: #D85A30; }
+.pricing .col-lg-6:nth-child(4) .pricing-item:hover { border-color: #F0997B; }
+
+/* Buy Now Button */
 .pricing .buy-btn {
-  color: var(--accent-color);
-  display: inline-block;
-  padding: 8px 35px 10px 35px;
-  border-radius: 50px;
-  transition: none;
-  font-size: 16px;
-  font-weight: 500;
+  display: block;
+  text-align: center;
+  margin: 20px 28px 28px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
   font-family: var(--heading-font);
-  transition: 0.3s;
-  border: 1px solid var(--accent-color);
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.15s;
+  border: none;
+  color: #fff !important;
 }
 
 .pricing .buy-btn:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  opacity: 0.85;
+  transform: scale(0.98);
+  color: #fff !important;
+  background: unset;
 }
 
+.pricing .col-lg-6:nth-child(1) .buy-btn {
+  background: linear-gradient(135deg, #378ADD, #185FA5);
+}
+.pricing .col-lg-6:nth-child(2) .buy-btn {
+  background: linear-gradient(135deg, #7F77DD, #534AB7);
+}
+.pricing .col-lg-6:nth-child(3) .buy-btn {
+  background: linear-gradient(135deg, #1D9E75, #0F6E56);
+}
+.pricing .col-lg-6:nth-child(4) .buy-btn {
+  background: linear-gradient(135deg, #D85A30, #993C1D);
+}
+
+/* Featured card override — পুরনো .featured class remove করো */
 .pricing .featured {
-  border-top-color: var(--accent-color);
-}
-
-.pricing .featured .buy-btn {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-}
-
-@media (max-width: 992px) {
-  .pricing .box {
-    max-width: 60%;
-    margin: 0 auto 30px auto;
-  }
-}
-
-@media (max-width: 767px) {
-  .pricing .box {
-    max-width: 80%;
-    margin: 0 auto 30px auto;
-  }
-}
-
-@media (max-width: 420px) {
-  .pricing .box {
-    max-width: 100%;
-    margin: 0 auto 30px auto;
-  }
+  border-top: none;
 }
 
 /*--------------------------------------------------------------
@@ -3324,9 +3405,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
 
 /*--------------------------------------------------------------
 # Error 404 Section
