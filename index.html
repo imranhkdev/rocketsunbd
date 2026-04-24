@@ -3,12 +3,51 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>RocketsunBD</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <title>
+      Rocket Sun BD | Pharmaceutical Ingredients, Packaging & Solvents
+    </title>
+    <meta
+      name="description"
+      content="Rocket Sun BD supplies high-quality pharmaceutical packaging, solvents, active pharmaceutical ingredients (API) and excipients — local stock and international import."
+    />
+
+    <!-- ✅ Keywords -->
+    <meta
+      name="keywords"
+      content="pharmaceutical ingredients bangladesh, API supplier, packaging materials, solvents supplier, excipients, rocket sun bd, medicine raw materials"
+    />
+
+    <!-- ✅ Author -->
+    <meta name="author" content="Rocket Sun BD" />
+
+    <!-- ✅ Robots — Google কে crawl করতে বলো -->
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.rocketsunbd.com/" />
+
+    <!-- ✅ Open Graph — Facebook/LinkedIn share এ সুন্দর preview দেখাবে -->
+    <meta
+      property="og:title"
+      content="Rocket Sun BD | Pharmaceutical Ingredients & Packaging"
+    />
+    <meta
+      property="og:description"
+      content="Supplier of pharmaceutical packaging, solvents, API and excipients in Bangladesh."
+    />
+    <meta property="og:image" content="assets/img/og-image.jpg" />
+    <meta property="og:url" content="https://www.rocketsunbd.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- ✅ Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rocket Sun BD" />
+    <meta
+      name="twitter:description"
+      content="Pharmaceutical packaging, solvents & API supplier in Bangladesh."
+    />
+    <meta name="twitter:image" content="assets/img/og-image.jpg" />
 
     <!-- Favicons -->
-    <link href="assets/img/r_logo.jpeg" rel="icon" />
+    <link href="assets/img/steps/rocketsunbd_logo.jpg" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Fonts -->
@@ -37,6 +76,7 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
   </head>
 
   <body class="index-page">
@@ -45,9 +85,6 @@
         class="container-fluid container-xl position-relative d-flex align-items-center"
       >
         <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/rsbd_logo.png" alt=""> -->
-          <!-- CSS Logo — no image needed -->
           <div class="logo-icon">
             <span>R</span>
           </div>
@@ -62,55 +99,44 @@
             <li><a href="#hero" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#work-process">Work Process</a></li>
             <li><a href="#team">Team</a></li>
             <li><a href="#pricing">Products</a></li>
-            <!-- <li><a href="blog.html">Blog</a></li> -->
-            <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
             <li><a href="#contact">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-
-        <!-- <a class="btn-getstarted" href="#about">Get Started</a> -->
       </div>
     </header>
 
     <main class="main">
       <!-- Hero Section -->
       <section id="hero" class="hero section dark-background">
+
+         <img 
+    src="assets/img/rocketsunbd_hero.webp" 
+    alt="Rocket Sun BD pharmaceutical packaging ingredients and solvents supplier in Bangladesh"
+    title="Rocket Sun BD | We Urge For Possibilities"
+    loading="eager"
+    style="display:none"
+  />
+
         <div class="container">
           <div class="row gy-4">
             <div
               class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center"
               data-aos="zoom-out"
             >
-              <h1 class="animate-slide">Better Solutions For Your Business</h1>
+              <h1 class="animate-charcter">
+                Better Solutions For Your Business
+              </h1>
               <p></p>
               <div class="d-flex">
-                <a href="#about" class="btn-get-started">Get Started</a>
-                <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+                <button class="glow-on-hover" type="button">
+                  <a href="#about">Get Started</a>
+                </button>
               </div>
             </div>
-            <!-- <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/world-science.jpg" class="img-fluid animated" alt="">
-          </div> -->
           </div>
         </div>
       </section>
@@ -123,9 +149,10 @@
             <script type="application/json" class="swiper-config">
               {
                 "loop": true,
-                "speed": 600,
+                "speed": 3000,
                 "autoplay": {
-                  "delay": 5000
+                  "reverseDirection": true,
+                  "delay": 1000
                 },
                 "slidesPerView": "auto",
                 "pagination": {
@@ -160,58 +187,66 @@
             <div class="swiper-wrapper align-items-center">
               <div class="swiper-slide">
                 <img
-                  src="assets/img/clients/clients-1.webp"
+                  src="assets/img/clients/rocketsunbd_clients-1.webp"
                   class="img-fluid"
-                  alt=""
+                  alt="bangladesh pharmaceutical supplier - Rocket Sun BD"
+                  loading="lazy"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="assets/img/clients/clients-2.webp"
+                  src="assets/img/clients/rocketsunbd_clients-2.webp"
                   class="img-fluid"
-                  alt=""
+                  alt="bangladesh pharmaceutical supplier - Rocket Sun BD"
+                  loading="lazy"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="assets/img/clients/clients-3.webp"
+                  src="assets/img/clients/rocketsunbd_clients-3.webp"
                   class="img-fluid"
-                  alt=""
+                  alt="bangladesh pharmaceutical supplier - Rocket Sun BD"
+                  loading="lazy"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="assets/img/clients/clients-4.webp"
+                  src="assets/img/clients/rocketsunbd_clients-4.webp"
                   class="img-fluid"
-                  alt=""
+                  alt="bangladesh pharmaceutical supplier - Rocket Sun BD"
+                  loading="lazy"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="assets/img/clients/clients-5.webp"
+                  src="assets/img/clients/rocketsunbd_clients-5.webp"
                   class="img-fluid"
-                  alt=""
+                  alt="bangladesh pharmaceutical supplier - Rocket Sun BD"
+                  loading="lazy"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="assets/img/clients/clients-6.webp"
+                  src="assets/img/clients/rocketsunbd_clients-6.webp"
                   class="img-fluid"
-                  alt=""
+                  alt="bangladesh pharmaceutical supplier - Rocket Sun BD"
+                  loading="lazy"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="assets/img/clients/clients-7.webp"
+                  src="assets/img/clients/rocketsunbd_clients-7.webp"
                   class="img-fluid"
-                  alt=""
+                  alt="bangladesh pharmaceutical supplier - Rocket Sun BD"
+                  loading="lazy"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="assets/img/clients/clients-8.webp"
+                  src="assets/img/clients/rocketsunbd_clients-8.webp"
                   class="img-fluid"
-                  alt=""
+                  alt="bangladesh pharmaceutical supplier - Rocket Sun BD"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -235,7 +270,7 @@
         <div class="container">
           <div class="row gy-4">
             <div
-              class="col-lg-6 content"
+              class="col-lg-12 content"
               data-aos="fade-up"
               data-aos-delay="100"
             >
@@ -265,31 +300,6 @@
               <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo</span></li>
             </ul> -->
             </div>
-
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <p>
-                <strong>Mission:</strong>
-                Our mission is to establish a strong global presence by
-                delivering innovative solutions and building sustainable
-                partnerships across diverse industries. We are committed to
-                creating exceptional value for our clients, employees, and
-                stakeholders while promoting responsible business practices that
-                benefit both society and the environment. As part of our
-                international expansion plan, we aim to establish strategic
-                branches in Guangzhou, China; Singapore; and Dubai, along with a
-                state-of-the-art manufacturing facility in Saudi Arabia.
-              </p>
-              <p>
-                <strong>Vision:</strong>
-                Our vision is to be a globally recognized organization known for
-                excellence, integrity, and innovation. We aim to be the first
-                choice for our customers by delivering high-quality and reliable
-                solutions. Through continuous innovation and strategic
-                expansion, we strive to strengthen our global presence and
-                establish operations in major cities worldwide
-              </p>
-              <!-- <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a> -->
-            </div>
           </div>
         </div>
       </section>
@@ -301,106 +311,49 @@
         class="section why-us light-background"
         data-builder="section"
       >
-        <div class="container-fluid">
+        <div class="container">
           <div class="row gy-4">
             <div
               class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1"
             >
               <div
-                class="content px-xl-5"
+                class="content mission-card"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                <h3>
-                  <span> </span><strong>Frequently Asked Questions</strong>
-                </h3>
                 <p>
-                  Our platform is built to help you work smarter, not harder.
-                  Its adapts to your needs and supports your goals. Make the
-                  most of every feature
+                  <strong>Mission:</strong>
+                  Our mission is to establish a strong global presence by
+                  delivering innovative solutions and building sustainable
+                  partnerships across diverse industries. We are committed to
+                  creating exceptional value for our clients, employees, and
+                  stakeholders while promoting responsible business practices
+                  that benefit both society and the environment. As part of our
+                  international expansion plan, we aim to establish strategic
+                  branches in Guangzhou, China; Singapore; and Dubai, along with
+                  a state-of-the-art manufacturing facility in Saudi Arabia.
                 </p>
-              </div>
-
-              <div
-                class="faq-container px-xl-5"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <div class="faq-item faq-active">
-                  <h3>
-                    <span>01</span> What types of industries do you serve, and
-                    what products do you supply?
-                  </h3>
-                  <div class="faq-content">
-                    <p>
-                      We serve a wide range of industries including
-                      Pharmaceuticals, Veterinary, Food, and Flexible Packaging
-                      sectors. Our product portfolio covers three major
-                      categories — Packaging Materials (such as PVC, PVDC,
-                      Aluminium Foil, Vials, Bottles, Sprayers, and
-                      Applicators), Active Pharmaceutical Ingredients (APIs)
-                      including Antibiotics, Anticancer, Antidiabetic, Hormones,
-                      and more, along with Excipients and Solvents like IPA,
-                      Ethanol, Methanol, and Acetone — all available through
-                      local stock or import.
-                    </p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div>
-                <!-- End Faq item-->
-
-                <div class="faq-item">
-                  <h3>
-                    <span>02</span> Do you manufacture products locally, or do
-                    you also import from abroad?
-                  </h3>
-                  <div class="faq-content">
-                    <p>
-                      We operate both ways. Through our own manufacturing
-                      facility — Fair Aluminum Packaging Ltd — we locally
-                      produce high-quality Aluminium Foils and PVC/PVDC films.
-                      Additionally, we import a wide range of packaging
-                      materials, APIs, Excipients, and Solvents from globally
-                      trusted sources in countries like Thailand, India, and
-                      China, ensuring consistent quality and competitive pricing
-                      for our clients.
-                    </p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div>
-                <!-- End Faq item-->
-
-                <div class="faq-item">
-                  <h3>
-                    <span>03</span> How can I source pharmaceutical APIs or
-                    Excipients through your company?
-                  </h3>
-                  <div class="faq-content">
-                    <p>
-                      We offer both local stock availability and indenting
-                      services for pharmaceutical APIs and Excipients. Whether
-                      you need common Excipients like MCC, HPMC, Lactose, or
-                      Mannitol, or specialized APIs from therapeutic categories
-                      like Ophthalmic, Respiratory, or Oncology — our team can
-                      source them efficiently. Simply reach out to us with your
-                      requirements, and we will provide the best available
-                      options in terms of quality, regulatory compliance, and
-                      delivery timelines.
-                    </p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div>
-                <!-- End Faq item-->
+                <p>
+                  <strong>Vision:</strong>
+                  Our vision is to be a globally recognized organization known
+                  for excellence, integrity, and innovation. We aim to be the
+                  first choice for our customers by delivering high-quality and
+                  reliable solutions. Through continuous innovation and
+                  strategic expansion, we strive to strengthen our global
+                  presence and establish operations in major cities worldwide
+                </p>
+                <!-- <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a> -->
               </div>
             </div>
 
             <div class="col-lg-5 order-1 order-lg-2 why-us-img">
               <img
-                src="assets/img/piqsels.com-id-obwir.jpg"
+                src="assets/img/rocketsunbd_mission_vision.webp"
                 class="img-fluid"
-                alt=""
+                alt="bangladesh pharmaceutical packaging supplier - Rocket Sun BD"
                 data-aos="zoom-in"
                 data-aos-delay="100"
+                loading="eager"
               />
             </div>
           </div>
@@ -413,7 +366,7 @@
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Our Services</h2>
-          <p>
+          <p style="font-family: Jost">
             We provide end-to-end pharmaceutical supply chain solutions — from
             local manufacturing to global indenting — supporting
             Pharmaceuticals, Veterinary, Food and Flexible Industries.
@@ -433,7 +386,7 @@
                 <h4>
                   <a href="" class="stretched-link">Foil Manufacturing</a>
                 </h4>
-                <p>
+                <p style="font-family: Poppins">
                   Through Fair Aluminum Packaging Ltd, we locally manufacture
                   pharmaceutical-grade Alu-Alu, PVC, and PVDC blister packaging
                   materials.
@@ -452,7 +405,7 @@
                 <h4>
                   <a href="" class="stretched-link">Trading & Local Stock</a>
                 </h4>
-                <p>
+                <p style="font-family: Poppins">
                   We maintain ready local stock of APIs, Excipients, Solvents,
                   and Packaging Materials for fast and reliable supply across
                   Bangladesh.
@@ -471,7 +424,7 @@
                 <h4>
                   <a href="" class="stretched-link">Indenting & Import</a>
                 </h4>
-                <p>
+                <p style="font-family: Poppins">
                   We offer complete indenting services for APIs, Excipients, and
                   Packing Materials sourced from China, India, Thailand and
                   other global markets.
@@ -488,7 +441,7 @@
               <div class="service-item position-relative">
                 <div class="icon"><i class="bi bi-heart-pulse icon"></i></div>
                 <h4><a href="" class="stretched-link">Industry Support</a></h4>
-                <p>
+                <p style="font-family: Poppins">
                   Dedicated supply solutions for Pharmaceutical, Veterinary,
                   Food, and Flexible Packaging industries with quality-assured
                   products.
@@ -505,7 +458,9 @@
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Work Process</h2>
-          <p>Complete workflow of RocketSunBD from start to finish</p>
+          <p style="font-family: Jost">
+            Complete workflow of RocketSunBD from start to finish
+          </p>
         </div>
         <!-- End Section Title -->
 
@@ -515,8 +470,8 @@
               <div class="steps-item">
                 <div class="steps-image">
                   <img
-                    src="assets/img/steps/procurement.jpg"
-                    alt="Step 1"
+                    src="assets/img/steps/rocketsunbd_process_one.webp"
+                    alt="bangladesh pharmaceutical packaging supplier - Rocket Sun BD"
                     class="img-fluid"
                     loading="lazy"
                   />
@@ -524,7 +479,7 @@
                 <div class="steps-content">
                   <div class="steps-number">01</div>
                   <h3>Sourcing & Procurement</h3>
-                  <div class="steps-features">
+                  <div class="steps-features" style="font-family: Poppins">
                     <div class="feature-item">
                       <i class="bi bi-check-circle"></i>
                       <span
@@ -557,8 +512,8 @@
               <div class="steps-item">
                 <div class="steps-image">
                   <img
-                    src="assets/img/steps/manufacturing_rocketsunbd.jpg"
-                    alt="Step 2"
+                    src="assets/img/steps/rocketsunbd_process_two.webp"
+                    alt="bangladesh pharmaceutical packaging supplier - Rocket Sun BD"
                     class="img-fluid"
                     loading="lazy"
                   />
@@ -566,7 +521,7 @@
                 <div class="steps-content">
                   <div class="steps-number">02</div>
                   <h3>Manufacturing & Packaging</h3>
-                  <div class="steps-features">
+                  <div class="steps-features" style="font-family: Poppins">
                     <div class="feature-item">
                       <i class="bi bi-check-circle"></i>
                       <span
@@ -600,7 +555,7 @@
               <div class="steps-item">
                 <div class="steps-image">
                   <img
-                    src="assets/img/steps/sales.jpg"
+                    src="assets/img/steps/rocketsunbd_process_three.webp"
                     alt="Step 3"
                     class="img-fluid"
                     loading="lazy"
@@ -609,7 +564,7 @@
                 <div class="steps-content">
                   <div class="steps-number">03</div>
                   <h3>Sales & Client Service</h3>
-                  <div class="steps-features">
+                  <div class="steps-features" style="font-family: Poppins">
                     <div class="feature-item">
                       <i class="bi bi-check-circle"></i>
                       <span
@@ -644,308 +599,14 @@
       </section>
       <!-- /Work Process Section -->
 
-      <!-- Portfolio Section -->
-      <section id="portfolio" class="portfolio section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
-          <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
-          </p>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container">
-          <div
-            class="isotope-layout"
-            data-default-filter="*"
-            data-layout="masonry"
-            data-sort="original-order"
-          >
-            <ul
-              class="portfolio-filters isotope-filters"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-product">Card</li>
-              <li data-filter=".filter-branding">Web</li>
-            </ul>
-            <!-- End Portfolio Filters -->
-
-            <div
-              class="row gy-4 isotope-container"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <img
-                  src="assets/img/portfolio/portfolio-portrait-1.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit</p>
-                  <a
-                    href="assets/img/portfolio/portfolio-portrait-1.webp"
-                    title="App 1"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-details.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
-              >
-                <img
-                  src="assets/img/portfolio/portfolio-1.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit</p>
-                  <a
-                    href="assets/img/portfolio/portfolio-1.webp"
-                    title="Product 1"
-                    data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-details.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
-              >
-                <img
-                  src="assets/img/portfolio/portfolio-3.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit</p>
-                  <a
-                    href="assets/img/portfolio/portfolio-3.webp"
-                    title="Branding 1"
-                    data-gallery="portfolio-gallery-branding"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-details.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <img
-                  src="assets/img/portfolio/portfolio-4.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit</p>
-                  <a
-                    href="assets/img/portfolio/portfolio-4.webp"
-                    title="App 2"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-details.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
-              >
-                <img
-                  src="assets/img/portfolio/portfolio-portrait-2.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit</p>
-                  <a
-                    href="assets/img/portfolio/portfolio-portrait-2.webp"
-                    title="Product 2"
-                    data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-details.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
-              >
-                <img
-                  src="assets/img/portfolio/portfolio-portrait-3.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit</p>
-                  <a
-                    href="assets/img/portfolio/portfolio-portrait-3.webp"
-                    title="Branding 2"
-                    data-gallery="portfolio-gallery-branding"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-details.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <img
-                  src="assets/img/portfolio/portfolio-7.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit</p>
-                  <a
-                    href="assets/img/portfolio/portfolio-7.webp"
-                    title="App 3"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-details.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
-              >
-                <img
-                  src="assets/img/portfolio/portfolio-8.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit</p>
-                  <a
-                    href="assets/img/portfolio/portfolio-8.webp"
-                    title="Product 3"
-                    data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-details.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
-              >
-                <img
-                  src="assets/img/portfolio/portfolio-9.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit</p>
-                  <a
-                    href="assets/img/portfolio/portfolio-9.webp"
-                    title="Branding 2"
-                    data-gallery="portfolio-gallery-branding"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-details.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-            </div>
-            <!-- End Portfolio Container -->
-          </div>
-        </div>
-      </section>
-      <!-- /Portfolio Section -->
-
       <!-- Team Section -->
       <section id="team" class="team section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Team</h2>
-          <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
+          <p style="font-family: Jost">
+            Meet the dedicated professionals behind Rocket Sun BD, committed to
+            delivering the best pharmaceutical solutions.
           </p>
         </div>
         <!-- End Section Title -->
@@ -956,9 +617,10 @@
               <div class="team-member d-flex align-items-start">
                 <div class="pic">
                   <img
-                    src="assets/img/person/person-m-7.webp"
+                    src="assets/img/person/person-m-6.webp"
                     class="img-fluid"
-                    alt=""
+                    alt="bangladesh pharmaceutical supplier - Rocket Sun BD"
+                    loading="lazy"
                   />
                 </div>
                 <div class="member-info">
@@ -982,9 +644,10 @@
               <div class="team-member d-flex align-items-start">
                 <div class="pic">
                   <img
-                    src="assets/img/person/person-f-8.webp"
+                    src="assets/img/person/person-f-5.webp"
                     class="img-fluid"
-                    alt=""
+                    alt="bangladesh pharmaceutical supplier - Rocket Sun BD"
+                    loading="lazy"
                   />
                 </div>
                 <div class="member-info">
@@ -1009,9 +672,10 @@
               <div class="team-member d-flex align-items-start">
                 <div class="pic">
                   <img
-                    src="assets/img/person/person-m-6.webp"
+                    src="assets/img/person/person-m-12.webp"
                     class="img-fluid"
-                    alt=""
+                    alt="bangladesh pharmaceutical supplier - Rocket Sun BD"
+                    loading="lazy"
                   />
                 </div>
                 <div class="member-info">
@@ -1035,9 +699,10 @@
               <div class="team-member d-flex align-items-start">
                 <div class="pic">
                   <img
-                    src="assets/img/person/person-f-4.webp"
+                    src="assets/img/person/person-m-13.webp"
                     class="img-fluid"
-                    alt=""
+                    alt="bangladesh pharmaceutical supplier - Rocket Sun BD"
+                    loading="lazy"
                   />
                 </div>
                 <div class="member-info">
@@ -1063,13 +728,18 @@
       <!-- /Team Section -->
 
       <!-- Pricing Section -->
-      <section id="pricing" class="pricing section light-background">
+      <section
+        id="pricing"
+        class="pricing section light-background"
+        style="font-family: Jost"
+      >
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Products</h2>
           <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
+            We supply high-quality Packaging, Solvents, Active Pharmaceutical
+            Ingredients & Excipients — both from local stock and international
+            import.
           </p>
         </div>
         <!-- End Section Title -->
@@ -1160,6 +830,55 @@
                     <span>Acetone</span>
                   </li>
                 </ul>
+
+                <!-- Second Category -->
+                <h3 class="pricing-sub-heading">
+                  Excipients (Local Stock & Import)
+                </h3>
+                <ul>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span
+                      >Colours, Flavours, Sucralose, Sorbitol 70% Solution</span
+                    >
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span>MCC (Microcrystalline Cellulose) 101 & 102</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span
+                      >Pregelatinized Starch, Maize Starch, Lactose,
+                      Mannitol</span
+                    >
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span>Sodium Starch Glycolate</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span>Hydroxypropyl Methyl Cellulose (HPMC)</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span>Low Substituted Hydroxypropyl Cellulose (L-HPC)</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span>Povidone, Magnesium Stearate, Crospovidone</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span>Polyethylene Glycol, Dibasic Sodium Phosphate</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span>Sodium Starch Fumarate etc.</span>
+                  </li>
+                </ul>
+
                 <a href="#" class="buy-btn">Buy Now</a>
               </div>
             </div>
@@ -1221,11 +940,7 @@
       <section id="testimonials" class="testimonials section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2>Testimonials</h2>
-          <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
-          </p>
+          <h2>Messages</h2>
         </div>
         <!-- End Section Title -->
 
@@ -1408,11 +1123,9 @@
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Frequently Asked Questions</h2>
-          <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
+          <p style="font-family: jost">
+            Find answers to the most common questions about our products, import
+            process, and business services.
           </p>
         </div>
         <!-- End Section Title -->
@@ -1427,13 +1140,22 @@
                   data-aos-delay="200"
                 >
                   <i class="faq-icon bi bi-question-circle"></i>
-                  <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                  <h3>
+                    What types of industries do you serve, and what products do
+                    you supply?
+                  </h3>
                   <div class="faq-content">
-                    <p>
-                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna
-                      id volutpat lacus laoreet non curabitur gravida. Venenatis
-                      lectus magna fringilla urna porttitor rhoncus dolor purus
-                      non.
+                    <p style="font-family: jost">
+                      We serve a wide range of industries including
+                      Pharmaceuticals, Veterinary, Food, and Flexible Packaging
+                      sectors. Our product portfolio covers three major
+                      categories — Packaging Materials (such as PVC, PVDC,
+                      Aluminium Foil, Vials, Bottles, Sprayers, and
+                      Applicators), Active Pharmaceutical Ingredients (APIs)
+                      including Antibiotics, Anticancer, Antidiabetic, Hormones,
+                      and more, along with Excipients and Solvents like IPA,
+                      Ethanol, Methanol, and Acetone — all available through
+                      local stock or import.
                     </p>
                   </div>
                   <i class="faq-toggle bi bi-chevron-right"></i>
@@ -1443,17 +1165,19 @@
                 <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                   <i class="faq-icon bi bi-question-circle"></i>
                   <h3>
-                    Feugiat scelerisque varius morbi enim nunc faucibus a
-                    pellentesque?
+                    Do you manufacture products locally, or do you also import
+                    from abroad?
                   </h3>
                   <div class="faq-content">
-                    <p>
-                      Dolor sit amet consectetur adipiscing elit pellentesque
-                      habitant morbi. Id interdum velit laoreet id donec
-                      ultrices. Fringilla phasellus faucibus scelerisque
-                      eleifend donec pretium. Est pellentesque elit ullamcorper
-                      dignissim. Mauris ultrices eros in cursus turpis massa
-                      tincidunt dui.
+                    <p style="font-family: jost">
+                      We operate both ways. Through our own manufacturing
+                      facility — Fair Aluminum Packaging Ltd — we locally
+                      produce high-quality Aluminium Foils and PVC/PVDC films.
+                      Additionally, we import a wide range of packaging
+                      materials, APIs, Excipients, and Solvents from globally
+                      trusted sources in countries like Thailand, India, and
+                      China, ensuring consistent quality and competitive pricing
+                      for our clients.
                     </p>
                   </div>
                   <i class="faq-toggle bi bi-chevron-right"></i>
@@ -1463,54 +1187,20 @@
                 <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
                   <i class="faq-icon bi bi-question-circle"></i>
                   <h3>
-                    Dolor sit amet consectetur adipiscing elit pellentesque?
+                    How can I source pharmaceutical APIs or Excipients through
+                    your company?
                   </h3>
                   <div class="faq-content">
-                    <p>
-                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices
-                      sagittis orci. Faucibus pulvinar elementum integer enim.
-                      Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
-                      tellus pellentesque eu tincidunt. Lectus urna duis
-                      convallis convallis tellus. Urna molestie at elementum eu
-                      facilisis sed odio morbi quis
-                    </p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div>
-                <!-- End Faq item-->
-
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
-                  <i class="faq-icon bi bi-question-circle"></i>
-                  <h3>
-                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
-                  </h3>
-                  <div class="faq-content">
-                    <p>
-                      Dolor sit amet consectetur adipiscing elit pellentesque
-                      habitant morbi. Id interdum velit laoreet id donec
-                      ultrices. Fringilla phasellus faucibus scelerisque
-                      eleifend donec pretium. Est pellentesque elit ullamcorper
-                      dignissim. Mauris ultrices eros in cursus turpis massa
-                      tincidunt dui.
-                    </p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div>
-                <!-- End Faq item-->
-
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
-                  <i class="faq-icon bi bi-question-circle"></i>
-                  <h3>
-                    Tempus quam pellentesque nec nam aliquam sem et tortor
-                    consequat?
-                  </h3>
-                  <div class="faq-content">
-                    <p>
-                      Molestie a iaculis at erat pellentesque adipiscing
-                      commodo. Dignissim suspendisse in est ante in. Nunc vel
-                      risus commodo viverra maecenas accumsan. Sit amet nisl
-                      suscipit adipiscing bibendum est. Purus gravida quis
-                      blandit turpis cursus in
+                    <p style="font-family: jost">
+                      We offer both local stock availability and indenting
+                      services for pharmaceutical APIs and Excipients. Whether
+                      you need common Excipients like MCC, HPMC, Lactose, or
+                      Mannitol, or specialized APIs from therapeutic categories
+                      like Ophthalmic, Respiratory, or Oncology — our team can
+                      source them efficiently. Simply reach out to us with your
+                      requirements, and we will provide the best available
+                      options in terms of quality, regulatory compliance, and
+                      delivery timelines.
                     </p>
                   </div>
                   <i class="faq-toggle bi bi-chevron-right"></i>
@@ -1523,214 +1213,14 @@
       </section>
       <!-- /Faq 2 Section -->
 
-      <!-- Subscribe Section -->
-      <section id="subscribe" class="subscribe section">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4 justify-content-between align-items-center">
-            <div class="col-lg-6">
-              <div class="cta-content" data-aos="fade-up" data-aos-delay="200">
-                <h2>Subscribe to our newsletter</h2>
-                <p>
-                  Proin eget tortor risus. Mauris blandit aliquet elit, eget
-                  tincidunt nibh pulvinar a. Curabitur aliquet quam id dui
-                  posuere blandit.
-                </p>
-                <form
-                  action="forms/newsletter.php"
-                  method="post"
-                  class="php-email-form cta-form"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
-                  <div class="input-group mb-3">
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="Email address..."
-                      aria-label="Email address"
-                      aria-describedby="button-subscribe"
-                    />
-                    <button
-                      class="btn btn-primary"
-                      type="submit"
-                      id="button-subscribe"
-                    >
-                      Subscribe
-                    </button>
-                  </div>
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your subscription request has been sent. Thank you!
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="cta-image" data-aos="zoom-out" data-aos-delay="200">
-                <img src="assets/img/cta/cta-1.webp" alt="" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Subscribe Section -->
-
-      <!-- Recent Blog Postst Section -->
-      <section
-        id="recent-blog-postst"
-        class="recent-blog-postst section light-background"
-      >
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Recent Blog Posts</h2>
-          <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
-          </p>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container">
-          <div class="row gy-5">
-            <div class="col-xl-4 col-md-6">
-              <div
-                class="post-item position-relative h-100"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <div class="post-img position-relative overflow-hidden">
-                  <img
-                    src="assets/img/blog/blog-post-1.webp"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <span class="post-date">December 12</span>
-                </div>
-
-                <div class="post-content d-flex flex-column">
-                  <h3 class="post-title">
-                    Eum ad dolor et. Autem aut fugiat debitis
-                  </h3>
-
-                  <div class="meta d-flex align-items-center">
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-person"></i>
-                      <span class="ps-2">Julia Parker</span>
-                    </div>
-                    <span class="px-3 text-black-50">/</span>
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-folder2"></i>
-                      <span class="ps-2">Politics</span>
-                    </div>
-                  </div>
-
-                  <hr />
-
-                  <a href="blog-details.html" class="readmore stretched-link"
-                    ><span>Read More</span><i class="bi bi-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- End post item -->
-
-            <div class="col-xl-4 col-md-6">
-              <div
-                class="post-item position-relative h-100"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <div class="post-img position-relative overflow-hidden">
-                  <img
-                    src="assets/img/blog/blog-post-2.webp"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <span class="post-date">July 17</span>
-                </div>
-
-                <div class="post-content d-flex flex-column">
-                  <h3 class="post-title">
-                    Et repellendus molestiae qui est sed omnis
-                  </h3>
-
-                  <div class="meta d-flex align-items-center">
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-person"></i>
-                      <span class="ps-2">Mario Douglas</span>
-                    </div>
-                    <span class="px-3 text-black-50">/</span>
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-folder2"></i>
-                      <span class="ps-2">Sports</span>
-                    </div>
-                  </div>
-
-                  <hr />
-
-                  <a href="blog-details.html" class="readmore stretched-link"
-                    ><span>Read More</span><i class="bi bi-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- End post item -->
-
-            <div
-              class="col-xl-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="post-item position-relative h-100">
-                <div class="post-img position-relative overflow-hidden">
-                  <img
-                    src="assets/img/blog/blog-post-3.webp"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <span class="post-date">September 05</span>
-                </div>
-
-                <div class="post-content d-flex flex-column">
-                  <h3 class="post-title">
-                    Quia assumenda est et veritati tirana ploder
-                  </h3>
-
-                  <div class="meta d-flex align-items-center">
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-person"></i>
-                      <span class="ps-2">Lisa Hunter</span>
-                    </div>
-                    <span class="px-3 text-black-50">/</span>
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-folder2"></i>
-                      <span class="ps-2">Economics</span>
-                    </div>
-                  </div>
-
-                  <hr />
-
-                  <a href="blog-details.html" class="readmore stretched-link"
-                    ><span>Read More</span><i class="bi bi-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- End post item -->
-          </div>
-        </div>
-      </section>
-      <!-- /Recent Blog Postst Section -->
-
       <!-- Contact Section -->
       <section id="contact" class="contact section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Contact</h2>
-          <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
+          <p style="font-family: jost">
+            Have a question or want to work with us? Reach out to our team and
+            we'll get back to you shortly.
           </p>
         </div>
         <!-- End Section Title -->
@@ -1747,7 +1237,10 @@
                   <i class="bi bi-geo-alt flex-shrink-0"></i>
                   <div>
                     <h3>Address</h3>
-                    <p>A108 Adam Street, New York, NY 535022</p>
+                    <p>
+                      Apon Heights (Suite 6E) House: 27/1/B Shyamoli, Dhaka
+                      Bangladesh
+                    </p>
                   </div>
                 </div>
                 <!-- End Info Item -->
@@ -1760,7 +1253,7 @@
                   <i class="bi bi-telephone flex-shrink-0"></i>
                   <div>
                     <h3>Call Us</h3>
-                    <p>+1 5589 55488 55</p>
+                    <p>+880-1710132595</p>
                   </div>
                 </div>
                 <!-- End Info Item -->
@@ -1773,13 +1266,13 @@
                   <i class="bi bi-envelope flex-shrink-0"></i>
                   <div>
                     <h3>Email Us</h3>
-                    <p>info@example.com</p>
+                    <p>info@rocketsunbd.com</p>
                   </div>
                 </div>
                 <!-- End Info Item -->
 
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.1991546171353!2d90.3620732748465!3d23.775921487797067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0babda8f69f%3A0x196c3fd6e77ecb1c!2sAlamin%20Apon%20Heights%2C%20Plot%20No.%2027%2F1%2FB%2C%20Kallyanpur%20Rd%20No%203%2C%20Dhaka%201207!5e0!3m2!1sen!2sbd!4v1776996079970!5m2!1sen!2sbd"
                   frameborder="0"
                   style="border: 0; width: 100%; height: 270px"
                   allowfullscreen=""
@@ -1863,100 +1356,68 @@
 
     <footer id="footer" class="footer">
       <div class="footer-newsletter">
-        <div class="container">
-          <div class="row justify-content-center text-center">
-            <div class="col-lg-6">
-              <h4>Join Our Newsletter</h4>
-              <p>
-                Subscribe to our newsletter and receive the latest news about
-                our products and services!
-              </p>
-              <form
-                action="forms/newsletter.php"
-                method="post"
-                class="php-email-form"
-              >
-                <div class="newsletter-form">
-                  <input type="email" name="email" /><input
-                    type="submit"
-                    value="Subscribe"
-                  />
-                </div>
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  Your subscription request has been sent. Thank you!
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
+        <div class="container"></div>
       </div>
 
       <div class="container footer-top">
         <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="d-flex align-items-center">
-              <span class="sitename">Arsha</span>
-            </a>
-            <div class="footer-contact pt-3">
-              <p>A108 Adam Street</p>
-              <p>New York, NY 535022</p>
-              <p class="mt-3">
-                <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-office-card">
+              <h5>
+                <img
+                  src="https://flagcdn.com/w40/bd.png"
+                  alt="Bangladesh"
+                  width="24"
+                  height="16"
+                  style="border-radius: 3px; object-fit: cover"
+                />
+                Bangladesh Office
+              </h5>
+              <p class="office-company">Rocket Sun BD</p>
+              <p>
+                Apon Heights (Suite 6E) House: 27/1/B<br />
+                Shyamoli, Dhaka Bangladesh
               </p>
-              <p><strong>Email:</strong> <span>info@example.com</span></p>
+              <p class="office-company">
+                Phone: +8801710132595, +8801670050482 (WhatsApp, WeChat), Email:
+                info@rocketsunbd.com
+              </p>
+              <a href="https://www.rocketsunbd.com" target="_blank"
+                >www.rocketsunbd.com</a
+              >
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li>
-                <i class="bi bi-chevron-right"></i> <a href="#">About us</a>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i> <a href="#">Services</a>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i>
-                <a href="#">Terms of service</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li>
-                <i class="bi bi-chevron-right"></i> <a href="#">Web Design</a>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i>
-                <a href="#">Web Development</a>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i>
-                <a href="#">Product Management</a>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i> <a href="#">Marketing</a>
-              </li>
-            </ul>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-office-card">
+              <h5>
+                <img
+                  src="https://flagcdn.com/w40/cn.png"
+                  alt="China"
+                  width="24"
+                  height="16"
+                  style="border-radius: 3px; object-fit: cover"
+                />
+                China Office
+              </h5>
+              <p class="office-company">Rocket Sun BD (China)</p>
+              <p>
+                Yuhuan Economic Development Zone<br />Yuhuan City, Zhejiang
+                Province, China
+              </p>
+              <p class="office-company">Phone: +86 18857673030</p>
+            </div>
           </div>
 
           <div class="col-lg-4 col-md-12">
             <h4>Follow Us</h4>
             <p>
-              Cras fermentum odio eu feugiat lide par naso tierra videa magna
-              derita valies
+              Stay connected with Rocket Sun BD for the latest updates on
+              pharmaceutical ingredients, packaging & solvents.
             </p>
             <div class="social-links d-flex">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -1964,17 +1425,13 @@
 
       <div class="container copyright text-center mt-4">
         <p>
-          © <span>Copyright</span> <strong class="px-1 sitename">Arsha</strong>
+          Copyright © <span>2026</span>
+          <strong class="px-1 sitename">Rocketsunbd</strong>
           <span>All Rights Reserved</span>
         </p>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
           Designed by
-          <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by
-          <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+          <a href="#">Iqra Web Solutions</a>
         </div>
       </div>
     </footer>
