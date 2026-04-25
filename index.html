@@ -112,14 +112,13 @@
     <main class="main">
       <!-- Hero Section -->
       <section id="hero" class="hero section dark-background">
-
-         <img 
-    src="assets/img/rocketsunbd_hero.webp" 
-    alt="Rocket Sun BD pharmaceutical packaging ingredients and solvents supplier in Bangladesh"
-    title="Rocket Sun BD | We Urge For Possibilities"
-    loading="eager"
-    style="display:none"
-  />
+        <img
+          src="assets/img/rocketsunbd_hero.webp"
+          alt="Rocket Sun BD pharmaceutical packaging ingredients and solvents supplier in Bangladesh"
+          title="Rocket Sun BD | We Urge For Possibilities"
+          loading="eager"
+          style="display: none"
+        />
 
         <div class="container">
           <div class="row gy-4">
@@ -1449,7 +1448,7 @@
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/php-email-form/php-email-form.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
@@ -1459,5 +1458,46 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+      document
+        .querySelector(".php-email-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const form = this;
+          const loading = form.querySelector(".loading");
+          const errorMsg = form.querySelector(".error-message");
+          const successMsg = form.querySelector(".sent-message");
+
+          // Reset
+          loading.style.display = "block";
+          errorMsg.style.display = "none";
+          successMsg.style.display = "none";
+          errorMsg.textContent = "";
+          successMsg.textContent = "";
+
+          fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+          })
+            .then((res) => res.json()) // ← JSON parse করছে
+            .then((data) => {
+              loading.style.display = "none";
+              if (data.status === "success") {
+                successMsg.textContent = data.message;
+                successMsg.style.display = "block";
+                form.reset();
+              } else {
+                errorMsg.textContent = data.message;
+                errorMsg.style.display = "block";
+              }
+            })
+            .catch(() => {
+              loading.style.display = "none";
+              errorMsg.textContent = "Something went wrong. Please try again.";
+              errorMsg.style.display = "block";
+            });
+        });
+    </script>
   </body>
 </html>

@@ -1,44 +1,62 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+// CORS header
+header('Content-Type: application/json');
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+// Form data নাও
+$name    = strip_tags(trim($_POST['name'] ?? ''));
+$email   = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
+$subject = strip_tags(trim($_POST['subject'] ?? ''));
+$message = strip_tags(trim($_POST['message'] ?? ''));
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+// Validation
+if (empty($name) || empty($email) || empty($subject) || empty($message)) {
+    echo json_encode(['status' => 'error', 'message' => 'All fields are required.']);
+    exit;
+}
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo json_encode(['status' => 'error', 'message' => 'Invalid email address.']);
+    exit;
+}
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+// PHPMailer
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  if(isset($_POST['phone'])) {
-    $contact->add_message( $_POST['phone'], 'Phone');
-  }
-  $contact->add_message( $_POST['message'], 'Message', 10);
+require '../vendor/autoload.php';
 
-  echo $contact->send();
+$mail = new PHPMailer(true);
+
+try {
+    // SMTP Config
+    $mail->isSMTP();
+    $mail->Host       = 'rocketsunbd.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'info@rocketsunbd.com';
+    $mail->Password   = '@info#Rsbd21%';
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port       = 465;
+
+    // Sender & Receiver
+    $mail->setFrom('info@rocketsunbd.com', 'Rocket Sun BD');
+    $mail->addAddress('info@rocketsunbd.com', 'Rocket Sun BD');
+    $mail->addReplyTo($email, $name);
+
+    // Email Content
+    $mail->isHTML(true);
+    $mail->Subject = "Contact Form: $subject";
+    $mail->Body    = "
+        <h3>New message from Contact Form</h3>
+        <p><strong>Name:</strong> $name</p>
+        <p><strong>Email:</strong> $email</p>
+        <p><strong>Subject:</strong> $subject</p>
+        <p><strong>Message:</strong><br>$message</p>
+    ";
+
+    $mail->send();
+    echo json_encode(['status' => 'success', 'message' => 'Your message has been sent. Thank you!']);
+
+} catch (Exception $e) {
+    echo json_encode(['status' => 'error', 'message' => "Message could not be sent. Error: {$mail->ErrorInfo}"]);
+}
 ?>
