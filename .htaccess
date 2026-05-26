@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# www to non-www redirect
+RewriteCond %{HTTP_HOST} ^www\.rocketsunbd\.com [NC]
+RewriteRule ^(.*)$ https://rocketsunbd.com/$1 [L,R=301]
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
